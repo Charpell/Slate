@@ -2,12 +2,16 @@ import React from 'react'
 import { View, Text, ScrollView } from 'react-native'
 import { HeaderHome, PromotionBanner, ShowScroller, Cast } from '@components'
 import { gStyle } from '@constants'
+import { useNavigation } from '@react-navigation/native'
 
 export default function Home() {
+    const navigation = useNavigation()
     return (
         <View style={gStyle.container}>
-            <HeaderHome />
-            <ScrollView>
+            <HeaderHome navigation={navigation} />
+            <ScrollView
+                bounces
+            >
                 <PromotionBanner />
 
                 <Text style={gStyle.heading}>Previews</Text>

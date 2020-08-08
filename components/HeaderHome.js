@@ -14,7 +14,10 @@ export default class HeaderHome extends Component {
 
         return (
             <Animated.View style={[styles.container, { top }]}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                    activeOpacity={0.7}
+                    onPress={() => navigation.navigate("Home")}
+                >
                     <Image source={images.netflixTransparent} style={styles.logo} />
                 </TouchableOpacity>
 
@@ -22,7 +25,7 @@ export default class HeaderHome extends Component {
                     {all && (
                         <>
                             <TouchText 
-                                onPress={() => navigation.navigate('HomeTvShows')}
+                                onPress={() => navigation.navigate('TvShows')}
                                 text="TV Shows"
                                 textStyle={styles.text}
                             />
