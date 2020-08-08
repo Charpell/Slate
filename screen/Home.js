@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, ScrollView } from 'react-native'
-import { HeaderHome, PromotionBanner, ShowScroller } from '@components'
+import { HeaderHome, PromotionBanner, ShowScroller, Cast } from '@components'
 import { gStyle } from '@constants'
 
 export default function Home() {
@@ -33,6 +33,8 @@ export default function Home() {
 
                 <View style={gStyle.spacer24} />
             </ScrollView>
+
+            <Cast />
         </View>
     )
 }
