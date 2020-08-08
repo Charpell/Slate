@@ -10,7 +10,7 @@ import Home from '../screen/Home'
 
 const Main = () => {
     return (
-        <RootStack.Navigator>
+        <RootStack.Navigator screenOptions={{ headerShown: false }}>
             <RootStack.Screen name="Home" component={Home} />
         </RootStack.Navigator>
     )

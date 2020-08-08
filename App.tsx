@@ -2,12 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Navigator from './navigation'
+console.disableYellowBox = true
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Navigator />
-      <StatusBar style="auto" />
+      <StatusBar style="auto" hidden/>
     </View>
   );
 }
