@@ -7,6 +7,7 @@ const RootStack = createStackNavigator()
 import Home from '../screen/Home'
 import TvShows from '../screen/TvShows'
 import Movies from '../screen/Movies'
+import MyList from '../screen/MyList'
 
 export default  () => {
     return (
@@ -14,6 +15,7 @@ export default  () => {
             <RootStack.Screen name="Home" component={Home} />
             <RootStack.Screen name="TvShows" component={TvShows} />
             <RootStack.Screen name="Movies" component={Movies} />
+            <RootStack.Screen name="MyList" component={MyList} />
         </RootStack.Navigator>
     )
 }
