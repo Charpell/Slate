@@ -6,12 +6,14 @@ const RootStack = createStackNavigator()
 
 import Home from '../screen/Home'
 import TvShows from '../screen/TvShows'
+import Movies from '../screen/Movies'
 
 export default  () => {
     return (
         <RootStack.Navigator screenOptions={{ headerShown: false }}>
             <RootStack.Screen name="Home" component={Home} />
             <RootStack.Screen name="TvShows" component={TvShows} />
+            <RootStack.Screen name="Movies" component={Movies} />
         </RootStack.Navigator>
     )
 }

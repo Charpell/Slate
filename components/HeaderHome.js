@@ -30,7 +30,7 @@ export default class HeaderHome extends Component {
                                 textStyle={styles.text}
                             />
                             <TouchText 
-                                onPress={() => navigation.navigate('HomeMoview')}
+                                onPress={() => navigation.navigate('Movies')}
                                 text="Movies"
                                 textStyle={styles.text}
                             />
