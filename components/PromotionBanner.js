@@ -46,7 +46,7 @@ class PromotionBanner extends React.Component {
               onPress={this.myListPress}
               text="My List"
             />
-            <PromotionPlay onPress={() => null} />
+            <PromotionPlay icon={<SvgPlus />} onPress={() => null} />
             <TouchTextIcon
               icon={<SvgInfo />}
               onPress={() => null}

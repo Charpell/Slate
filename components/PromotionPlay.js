@@ -22,7 +22,6 @@ export default function PromotionPlay({ icon = <SvgPlay />, onPress, text = "Pla
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
         backgroundColor: colors.white,
         borderRadius: 4,
         flex: 1,

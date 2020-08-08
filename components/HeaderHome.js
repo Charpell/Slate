@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
         paddingTop: device.iPhoneX ? 54 : 30,
         position: 'absolute',
         width: '100%',
-        zIndex: 10
+        zIndex: 1
     },
     containerMenu: {
         flex: 1,
